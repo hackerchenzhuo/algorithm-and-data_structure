@@ -6,7 +6,7 @@
 
 总之，这种题最重要的就是一个函数，这个函数思想掌握了，以后可以用更简单的语句实现：
 
- 
+
 
 > 
 <p>bigIn operator +(const bigIn &amp;A) const{<br/>
@@ -39,7 +39,7 @@
 因为最开始读入的时候是从后往前读入的，（真的佩他们想得出）
 
 下面这个题目就是这样的：
-
+![](https://img-blog.csdnimg.cn/20190322211640987.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9jaGVuemh1by5ibG9nLmNzZG4ubmV0,size_16,color_FFFFFF,t_70)
 > 
 <h2>题目描述</h2>
 <p>在计算机中，由于处理器位宽限制，只能处理有限精度的十进制整数加减法，比如在32位宽处理器计算机中，<br/>
