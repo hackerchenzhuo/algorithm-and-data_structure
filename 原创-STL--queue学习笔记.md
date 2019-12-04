@@ -78,4 +78,46 @@ void clear(queue&lt;int&gt;&amp; q)
 
 ### 举个例子
 
- 
+```c++
+#include<queue>
+#include<iostream>
+using namespace std;
+void clear(queue<int>&q)
+{
+    queue<int>empty;
+    swap(empty,q);
+ } 
+int main()
+{
+    queue<int>q;
+    q.push(1);                //在队列末尾依次插入1 2 3 
+    q.push(2);
+    q.push(3);
+    
+    int u=q.back();            //返回队列中最后一个元素 
+    cout<<"队列最后一个元素为："<<u<<endl;
+    
+    int v=q.front();        //返回队列中第一个元素 
+    cout<<"队列第一个元素为:"<<v<<endl;
+    
+    q.pop();                //删除第一个元素 
+    v=q.front();
+    cout<<"队列第一个元素为："<<v<<endl; 
+ 
+    int size=q.size();                //size返回元素个数 
+    cout<<"队列中存在"<<size<<"个元素"<<endl; 
+    
+    cout<<"判断队列是否为空，空输出1 否则输出1："<<endl;
+    int flag=q.empty();            //判断队列是否为空，为空返回1，否则返回0 
+    cout<<flag<<endl;
+//情况queue的三种方法    
+/*    q=queue<int>();*/
+ 
+/*    while(!q.empty())
+        q.pop();*/
+    
+    clear(q);                //queue中没有clear操作，用函数定义clear函数，使用swap 
+    cout<<q.empty()<<endl;
+    return 0;
+ }
+ ```
